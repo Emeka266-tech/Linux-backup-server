@@ -33,21 +33,26 @@ Here's how i did it, firstly i installed and updated the server
 <h2>After i logged in and confirmed it using the "whoami" command. I hardend the SSH configuration using a file editor (nano). After which i restarted it and confirmed it was all set then i started the backup process...</h2>
 
 
-<img width="1794" height="833" alt="image" src="https://github.com/user-attachments/assets/aa8b6d2a-799a-4708-8e4b-feb3a4e208db" />
-
-
-<h2>After backing it up and confirm it, i tested it using the "rsync" command and after getting the expected output from the backup which is "test.txt".</h2>
-
-<img width="1771" height="421" alt="image" src="https://github.com/user-attachments/assets/0c209593-cc51-4428-93f6-dbc1cc0e7785" />
-
-
-
 <img width="1794" height="833" alt="image" src="https://github.com/user-attachments/assets/47998e5e-7598-4a62-a655-c4487b184d09" />
 
 
-<img width="1794" height="833" alt="image" src="https://github.com/user-attachments/assets/5d7bfb0d-72a8-426c-ae8e-5b45df8b4ad4" />
+
+<img width="1794" height="833" alt="image" src="https://github.com/user-attachments/assets/aa8b6d2a-799a-4708-8e4b-feb3a4e208db" />
 
 
+<h2>After backing it up and confirming it. i tested it using the "rsync" command and i got the expected output from the backup which is "test.txt".</h2>
+
+
+
+
+<h2>I went further to locate the directory in which the backed up file is located</h2>
+
+
+<img width="1792" height="832" alt="image" src="https://github.com/user-attachments/assets/43c98d0c-c966-40c3-b7b5-1d951d184d0e" />
+
+
+ 
+<h2>This project taught me how to secure a Linux server using SSH key-based authentication, apply least-privilege access with a non-root user, and perform secure backups with rsync. It also improved my understanding of Linux permissions, user management, and real-world troubleshooting of security and access issues.</h2>
 
 
 
