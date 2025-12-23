@@ -14,7 +14,7 @@ Here's how i did it, firstly i installed and updated the server
 
 
 
-<h2>I created a dedicated backup user, created the backup directory,set the ownership and also the rights and permission</h2>
+<h2>I created a dedicated backup user, created the backup directory,set the ownership and also the rights and permission..</h2>
 
 
 <img width="1794" height="833" alt="image" src="https://github.com/user-attachments/assets/e89605f9-44e7-4757-8e74-0ba5a1a6b317" />
