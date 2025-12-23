@@ -1,37 +1,61 @@
-<h2>This is a secure linux backup server that synchronizes data from client machine while defending against unauthorized access, data loss, disk theft and ransomeware file deletion.</h2>
+<h2>This project demonstrates how to build a secure linux backup server using SSH key authentication and least previledge principles.</h2>
+i configured rsync backups over encrypted channels, disabled rooot access and applied filesystem protections to mitigate possible ransomeware attacks.
+
+Here's how i did it, firstly i installed and updated the server
 
 
-This project demonstrates secure authentication, encryption in transit and at rest, least previledge, logging, monitoring and disaster recovery planning. here's how i did it,
-
-<h2>Firstly, i installed the required package</h2>
-
-<img width="1794" height="833" alt="image" src="https://github.com/user-attachments/assets/6cf9b78f-c060-4f82-8283-a47305d637ac" />
+<img width="1794" height="833" alt="image" src="https://github.com/user-attachments/assets/f8964b0c-d4e1-4f65-82ad-d81681153700" />
 
 
-<h2>The next step was to create a dedicated backup user.</h2>
-this prevents backups from running as root, limits damage if credentials are compromised and it also demonstrates the principle of least previledge.
-i made it as simple as possible...
+<h2>Then i enabled the SSH keys. which is very important for secure access..</h2>
 
 
-
-<img width="1794" height="833" alt="image" src="https://github.com/user-attachments/assets/e92a228c-0713-458d-b1d7-27b552567944" />
+<img width="1794" height="833" alt="image" src="https://github.com/user-attachments/assets/060ad964-2d2c-4279-a6ce-50642a5f79ee" />
 
 
 
-<h2>Then i added a secure SSH access (using a file editor). disabled root login and only allowed backuser access..</h2>
-
-The use of SSH keys prevents password attacks and disabling root login to only backup user is a critical hardening step
+<h2>I created a dedicated backup user, created the backup directory,set the ownership and also the rights and permission</h2>
 
 
-<img width="1794" height="833" alt="image" src="https://github.com/user-attachments/assets/0d029c67-41e0-4590-be24-a4e0ba4af493" />
+<img width="1794" height="833" alt="image" src="https://github.com/user-attachments/assets/e89605f9-44e7-4757-8e74-0ba5a1a6b317" />
 
 
-<img width="829" height="220" alt="image" src="https://github.com/user-attachments/assets/b8277ea7-067e-47c7-86ce-60caed712917" />
+<img width="1794" height="833" alt="image" src="https://github.com/user-attachments/assets/827b0117-0c34-4d20-9531-0fd8a8830748" />
 
 
-
-<h2>i went ahead to encrypt the backup vault incase if data is stolen it remains unreadable</h2>
+<h2>The next step was to configure an SSH key, copy it to the server and test the login..</h2>
 
 
 
-<h2
+<img width="1794" height="833" alt="image" src="https://github.com/user-attachments/assets/5557aa8c-99b2-495d-ac84-16b4d45b9128" />
+
+
+<h2>After i logged in and confirmed it using the "whoami" command. I hardend the SSH configuration using a file editor (nano). After which i restarted it and confirmed it was all set then i started the backup process...</h2>
+
+
+<img width="1794" height="833" alt="image" src="https://github.com/user-attachments/assets/aa8b6d2a-799a-4708-8e4b-feb3a4e208db" />
+
+
+<h2>After backing it up and confirm it, i tested it using the "rsync" command and after getting the expected output from the backup which is "test.txt".</h2>
+
+<img width="1771" height="421" alt="image" src="https://github.com/user-attachments/assets/0c209593-cc51-4428-93f6-dbc1cc0e7785" />
+
+
+
+<img width="1794" height="833" alt="image" src="https://github.com/user-attachments/assets/47998e5e-7598-4a62-a655-c4487b184d09" />
+
+
+<img width="1794" height="833" alt="image" src="https://github.com/user-attachments/assets/5d7bfb0d-72a8-426c-ae8e-5b45df8b4ad4" />
+
+
+
+
+
+
+
+
+
+
+
+
+
