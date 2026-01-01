@@ -1,7 +1,24 @@
-<h2>This project demonstrates how to build a secure linux backup server using SSH key authentication and least previledge principles.</h2>
-i configured rsync backups over encrypted channels, disabled rooot access and applied filesystem protections to mitigate possible ransomeware attacks.
+<h2>This project involves setting up a Linux system to function as a backup server. The aim was to understand how backups are handled in a Linux environment and how data can be transferred securely between systems.</h2>
 
-Here's how i did it, firstly i installed and updated the server
+
+<h2>Tools used</h2>
+Linux (ubuntu)
+
+rsync
+
+SSH keys
+
+<h2>project description</h2>
+
+In this lab, I configured a Linux server to act as a central location for storing backup files. A dedicated non root user was created on the server in order to apply the principle of least privilege, and secure access was configured using SSH.
+
+Secure access to the server was configured using SSH. Backups were performed from a client system to the server using rsync, allowing files to be transferred efficiently and securely. The setup was tested to ensure that files were copied correctly and stored as expected on the backup server.
+
+
+
+<h2>Lab set up and process<h2>
+ 
+ firstly i installed and updated the server
 
 
 <img width="1794" height="833" alt="image" src="https://github.com/user-attachments/assets/f8964b0c-d4e1-4f65-82ad-d81681153700" />
@@ -51,8 +68,19 @@ Here's how i did it, firstly i installed and updated the server
 <img width="1792" height="832" alt="image" src="https://github.com/user-attachments/assets/43c98d0c-c966-40c3-b7b5-1d951d184d0e" />
 
 
- 
-<h2>This project taught me how to secure a Linux server using SSH key-based authentication, apply least-privilege access with a non-root user, and perform secure backups with rsync. It also improved my understanding of Linux permissions, user management, and real-world troubleshooting of security and access issues.</h2>
+<h2>Results..</h2>
+
+Files were successfully backed up from the client to the server
+
+Data transfers were encrypted using SSH
+
+Backup operations were performed using a non root user
+
+The backup process worked reliably during testing
+
+ <h2>what i learned</h2>
+  
+This project taught me how to secure a Linux server using SSH key-based authentication, apply least-privilege access with a non-root user, and perform secure backups with rsync. It also improved my understanding of Linux permissions, user management, and real-world troubleshooting of security and access issues.
 
 
 
